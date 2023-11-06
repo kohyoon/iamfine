@@ -11,12 +11,17 @@
 				<form:input path="mem_id" placeholder="영문, 숫자 4~12자" autocomplete="off"/>
 				<input type="button" id="cofirmId" value="아이디 중복체크">
 				<span id="check_id_message"></span>
-				<form:errors path="id" cssClass="error-color"/>
+				<form:errors path="mem_id" cssClass="error-color"/>
 			</li>
 			<li>
 				<form:label path="mem_name">이름</form:label>
 				<form:input path="mem_name"/>
 				<form:errors path="mem_name" cssClass="error-color"/>
+			</li>
+			<li>
+				<form:label path="mem_pw">비밀번호</form:label>
+				<form:password path="mem_pw"/>
+				<form:errors path="mem_pw" cssClass="error-color"/>
 			</li>
 			<li>
 				<form:label path="mem_nickname">닉네임</form:label>

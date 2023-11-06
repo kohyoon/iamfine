@@ -18,7 +18,7 @@
 	<c:if test="${!empty user}">
 		<a href="${pageContext.request.contextPath}/member/logout.do">로그아웃</a>
 	</c:if>
-	<c:if test="${!empty user && user.auth == 9}">
+	<c:if test="${!empty user && user.mem_auth == 9}">
 		<a href="${pageContext.request.contextPath}/main/main.do">관리자페이지</a>
 	</c:if>
 </div>
